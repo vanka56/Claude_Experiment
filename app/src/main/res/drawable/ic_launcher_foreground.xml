@@ -12,11 +12,9 @@
         android:fillColor="#C99A5F"
         android:pathData="M76,24 L84,32 L68,48 L60,40 Z" />
     <!-- Ball -->
-    <circle
+    <path
         android:fillColor="#D6432E"
-        android:cx="34"
-        android:cy="78"
-        android:r="10" />
+        android:pathData="M34,68 a10,10 0 1,1 0,20 a10,10 0 1,1 0,-20 Z" />
     <path
         android:strokeColor="#F4D9C6"
         android:strokeWidth="1.6"

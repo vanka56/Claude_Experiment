@@ -6,7 +6,6 @@ import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.SystemClock
-import kotlin.math.abs
 import kotlin.math.sqrt
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -222,5 +221,3 @@ class SwingDetector(context: Context) {
         private const val INTENSITY_NORMALIZER = 30f
     }
 }
-
-fun Float.clampAbs(max: Float): Float = if (abs(this) > max) max * (this / abs(this)) else this

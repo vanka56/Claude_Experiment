@@ -19,7 +19,7 @@ import com.swingcricket.game.ui.theme.StadiumNightElevated
 
 /** Soft floodlight-glow backdrop used behind every screen for a consistent premium feel. */
 @Composable
-fun GradientBackground(modifier: Modifier = Modifier, content: @Composable Box.() -> Unit) {
+fun GradientBackground(modifier: Modifier = Modifier, content: @Composable () -> Unit) {
     Box(
         modifier = modifier
             .fillMaxSize()
